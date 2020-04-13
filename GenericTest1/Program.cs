@@ -10,6 +10,8 @@ using System.Windows;
 using Autofac;
 using Autofac.Builder;
 using GenericTest1.Car;
+ 
+using GenericTest1.Animal;
 
 namespace GenericTest1
 {
@@ -19,8 +21,9 @@ namespace GenericTest1
         {
             Driver driver = new Driver();
             driver.Drive(4);
-            
 
+            CreaterAnimal createrAnimal = new CreaterAnimal();
+            createrAnimal.Creat();
 
             DB dB = new DB();
             dB.Insert();
@@ -29,13 +32,20 @@ namespace GenericTest1
             Console.Read(); 
         }
     }
-
-    class UseInterface
+     
+    public class CreaterAnimal
     {
-        public void Use(Animal animal)
+        public void Creat()
         {
+            AnimalManager animalManager = new AnimalManager();
+            animalManager.InitialAuto();
+
+            IAnimal animal = animalManager.GetT<Dog>();
             animal.Property();
+
         }
+       
+
     }
 
     public class DB

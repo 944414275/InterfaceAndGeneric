@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericTest1
 {
-    public class Dog : Animal
+    public class Dog : IAnimal
     {
         public void Property()
         {

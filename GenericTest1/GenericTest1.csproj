@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal\Animal.cs" />
+    <Compile Include="Animal\AnimalManager.cs" />
     <Compile Include="Car\AudiCar .cs" />
     <Compile Include="Car\BenzCar.cs" />
     <Compile Include="Car\FordCar .cs" />

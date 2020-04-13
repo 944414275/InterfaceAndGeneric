@@ -47,7 +47,7 @@ namespace GenericTest1.ViewModel
             SimpleIoc.Default.Register<Dog>();
             SimpleIoc.Default.Register<Cat>();
             SimpleIoc.Default.Register<Person>();
-            SimpleIoc.Default.Register<Animal>();
+            //SimpleIoc.Default.Register<Animal>();
 
         }
 

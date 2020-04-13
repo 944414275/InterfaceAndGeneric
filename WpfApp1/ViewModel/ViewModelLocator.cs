@@ -46,7 +46,7 @@ namespace WpfApp1.ViewModel
             SimpleIoc.Default.Register<Dog>(()=>new Dog());
             SimpleIoc.Default.Register<Cat>();
             SimpleIoc.Default.Register<Person>();
-            SimpleIoc.Default.Register<IAnimal>();
+            //SimpleIoc.Default.Register<IAnimal>();
         }
 
         //public MainViewModel Main
@@ -56,11 +56,11 @@ namespace WpfApp1.ViewModel
         //        return ServiceLocator.Current.GetInstance<MainViewModel>();
         //    }
         //}
-        
-        //public Dog Dog => ServiceLocator.Current.GetInstance<Dog>();
-        //public Cat Cat => ServiceLocator.Current.GetInstance<Cat>();
-        //public Person Person => ServiceLocator.Current.GetInstance<Person>();
-        
+
+        public Dog Dog => ServiceLocator.Current.GetInstance<Dog>();
+        public Cat Cat => ServiceLocator.Current.GetInstance<Cat>();
+        public Person Person => ServiceLocator.Current.GetInstance<Person>();
+
         //public IAnimal Animal => ServiceLocator.Current.GetInstance<IAnimal>();
         ////public Dog Dog
         ////{

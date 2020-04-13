@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp1.ViewModel;
+using GalaSoft.MvvmLight.Ioc;
  
 using CommonServiceLocator;
 
@@ -26,6 +27,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            ViewModelLocator viewModelLocator = new ViewModelLocator();
 
             var dog = ServiceLocator.Current.GetInstance<Dog>();
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericTest1
 {
-    interface Animal
+    interface IAnimal
     {
         void Property();
     }
